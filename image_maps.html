@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Image Maps</title>
+</head>
+<body>
+
+<!--HTML Image Maps-->
+
+<img src="images/workplace.jpg" alt="Web Development" style="height: 300px; width: 400px" usemap="#workmap">
+
+<map name="workmap">
+    <area shape="rect" coords="34,44,270,350" alt="Computer" href="comments.html">
+    <area shape="rect" coords="290,172,333,250" alt="Phone" href="paragraphs.html">
+    <area shape="circle" coords="337,300,44" alt="Coffee" href="html_images.html">
+</map>
+
+<!--Image Map and JavaScript-->
+<h2>Image Maps</h2>
+
+<p>Click on the cup of coffee to execute a JavaScript function:</p>
+
+<img src="images/workplace.jpg" alt="Workplace" usemap="#workmaps" width="400" height="350">
+
+<map name="workmaps">
+    <area shape="circle" coords="337,300,44" onclick="myFunction()">
+</map>
+
+<script>
+    function myFunction() {
+        alert("Welcome for a cup of coffee.");
+    }
+</script>
+
+</body>
+</html>

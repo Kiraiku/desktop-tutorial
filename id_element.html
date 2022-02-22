@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML ID ELEMENT</title>
+    <style>
+
+        #myHeader {
+            background-color: #add8e6;
+            color: #000000;
+            padding: 40px;
+            text-align: center;
+        }
+
+        #mtaa {
+            background-color: #96D4D4;
+            color: #111111;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .city {
+            background-color: #ff6347;
+            color: #f8f8f8;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+<h2>The ID attribute</h2>
+<p>Use CSS to style an element with the id "myHeader" </p>
+
+<h1 id="myHeader">My Header</h1>
+
+<h2>Difference Between Class and Id</h2>
+
+<!--An element with an unique id-->
+<h1 id="mtaa">My Cities</h1>
+
+<!--Multiple elements with same class-->
+<h2 class="city">London</h2>
+
+<h2 class="city">Tokyo</h2>
+
+<h2 class="city">Paris</h2>
+
+
+<h2>Using the id attribute in JavaScript</h2>
+<p>JavaScript can access an element with a specified id by using the getElementById() method:</p>
+
+<h1 id="col">Hello World</h1>
+<button onclick="displayResult()">Change text</button>
+
+<script>
+    function displayResult() {
+        document.getElementById("col").innerHTML = "Have a nice day!"
+    }
+</script>
+
+
+</body>
+</html>
